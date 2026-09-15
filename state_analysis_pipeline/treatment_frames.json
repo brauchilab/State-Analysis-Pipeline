@@ -1,0 +1,22 @@
+{
+  "_comment": "cell_name -> manual treatment (bright-flash) frame number, or list of frame numbers. Only needed for cells where auto-detection from bright_frames.json isn't available or isn't correct.",
+  "250109a-Cell1": 140,
+  "250109a-Cell2": 130,
+  "250109b-Cell1": 120,
+  "250109b-Cell2": 140,
+  "250109b-Cell3": 120,
+  "250116a-Cell2": 120,
+  "250116b-Cell1": 120,
+  "250116b-Cell2": 120,
+  "250116b-Cell3": 120,
+  "250116b-Cell4": 120,
+  "250116e-Cell1": 120,
+  "250116e-Cell2": 120,
+  "250124c-Cell1": 150,
+  "250124c-Cell2": 130,
+  "250124e-Cell1": 130,
+  "250124e-Cell2": 120,
+  "250124e-Cell3": 120,
+  "250328b-Cell1": 170,
+  "250509a-Cell1": 120
+}

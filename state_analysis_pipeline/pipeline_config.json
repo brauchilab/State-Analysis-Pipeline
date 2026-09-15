@@ -1,0 +1,12 @@
+{
+  "cell_names": ["010519-Cell2"],
+  "force_rerun_all": false,
+  "run_deconvolution": false,
+  "deconv_c1_iterations": 30,
+  "deconv_c2_iterations": 20,
+  "deconv_c2_denoise_weight": 0.01,
+  "reticulum_normalization_method": "log2",
+  "reticulum_outlier_handle": "remove_percentile",
+  "lysosome_normalization_method": "log2",
+  "run_export_videos": true
+}

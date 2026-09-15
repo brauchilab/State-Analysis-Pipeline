@@ -18,8 +18,8 @@ frame_intensity_utils.py
 cell_data_io.py
 reticulum_mask_utils.py
 calc_diff_cube.py
-tifffun.py
-tifffun_log2.py
+tifffun.py                 (dependency of calc_diff_cube.py)
+tifffun_log2.py             (dependency of calc_diff_cube.py, and used directly by reticulum_state_classification.py)
 treatment_frames.json
 pipeline_config.json
 PSF.tif                    (only if you're going to run deconvolution)

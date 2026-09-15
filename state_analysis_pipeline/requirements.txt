@@ -1,0 +1,21 @@
+numpy
+pandas
+scipy
+matplotlib
+tifffile
+
+# image processing
+scikit-image      # imported as skimage (dogmasks_v3.py, reticulum_mask_utils.py, tv_denoise.py)
+opencv-python      # imported as cv2 (reticulum_mask_utils.py)
+
+# particle tracking
+trackpy            # lysosome_tracking.py
+
+# HMM / classification
+hmmlearn           # simple_markov.py, lysosome_state_classification.py
+scikit-learn       # imported as sklearn (simple_markov.py, GaussianMixture init)
+
+# misc
+tqdm               # prob_an.py (progress bar during state prediction)
+plotly             # tifffun.py imports this at module level for an unused
+                   # plotting helper (compare_frames_animation)
