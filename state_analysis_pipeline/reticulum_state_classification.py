@@ -65,11 +65,6 @@ FORCE_RERUN = False
 # "dff" -> (F-F0)/F0. "log2" -> log2(F/F0).
 NORMALIZATION_METHOD = "dff"
 
-# "clip": np.clip(result, -1, 1). Arbitrary for log2 data, since log2 has
-# no real floor at -1 the way dF/F0 does -- treat those bounds as
-# arbitrary if used with log2.
-# "remove_iqr" / "remove_percentile" / "remove_zscore": trim extreme
-# values instead of hard clipping. "none": leave as-is.
 OUTLIER_HANDLE = "remove_percentile"
 
 MAX_POIS = 1000
@@ -124,12 +119,6 @@ def apply_cell_mask_to_er_mask(celloutdir, image_shape):
     print(f"  cell mask applied: {inside_px}/{cell_mask.size} pixels inside "
           f"({100 * inside_px / cell_mask.size:.1f}%)")
     return cell_mask
-
-
-# ---------------------------------------------------------------------------
-# dark frame lookup (bright frames are logged elsewhere but not used here,
-# see future_considerations.md)
-# ---------------------------------------------------------------------------
 
 def get_dark_frame_indices(cell_name):
     dark_path = OUTPUTS_DIR / cell_name / "dark_frames.json"
