@@ -30,9 +30,7 @@ def save_tif(array, out_path, imagej=True, compression="zlib"):
     range in the ImageJ metadata: without this, Fiji recalculates
     contrast per frame, making the same background value (0.0 in signed
     data like dF/F0 or log2) flicker between a different gray each frame.
-    A fixed range keeps that gray consistent across the stack -- the
-    background still won't be pure black in signed data, which is
-    expected, not a bug."""
+    A fixed range keeps that gray consistent across the stack."""
     out_dir = os.path.dirname(out_path)
     if out_dir:
         os.makedirs(out_dir, exist_ok=True)
