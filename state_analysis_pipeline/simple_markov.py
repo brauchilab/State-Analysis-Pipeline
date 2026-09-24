@@ -5,7 +5,6 @@ HMM Parameter Estimation for Video Pixel Classification
 This module trains an HMM on Points of Interest (POIs) data to estimate emission parameters
 (means and standard deviations) for three states: Low (0), Medium (1), and High (2).
 
-Author: Adapted for POI-based HMM parameter estimation
 Date: September 2025
 """
 
