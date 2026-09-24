@@ -4,16 +4,7 @@ c1_dec_mask_raw and _greedy_maximal_spacing, split out of
 old1_pipe_funcs_anex.py so importing them doesn't pull in that file's
 other top-level imports (pipeline_funcs.py, with its own fragile import
 chain -- dogmasks, masktracking, dist_matrix, dist_an, video_funcs --
-none of which either function actually uses). The rest of that file is
-ring/lysosome correlation analysis and an older, superseded POI sampling
-function, not used by this pipeline.
-
-The DoG/mask/contour helpers below are inlined from utils.py, trimmed to
-the single-channel case c1_dec_mask_raw actually uses (utils.py's
-versions support multi-channel 3D/4D stacks and loading from ND2 files,
-none of which apply here). This also drops utils.py's module-level
-joblib and nd2 dependencies, which are only needed by functions in that
-file this pipeline doesn't use.
+none of which either function actually uses).
 
 """
 
