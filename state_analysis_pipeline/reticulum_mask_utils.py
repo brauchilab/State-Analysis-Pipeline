@@ -15,8 +15,6 @@ none of which apply here). This also drops utils.py's module-level
 joblib and nd2 dependencies, which are only needed by functions in that
 file this pipeline doesn't use.
 
-Known issue carried over unchanged: see future_considerations.md for the
-DoG step's temporal blur.
 """
 
 import cv2
